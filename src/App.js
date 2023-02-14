@@ -37,9 +37,14 @@ const newexpense=[];
   {
     newexpense.push(<ExpenseItem title={expenses[i].title} amount={expenses[i].amount} date={expenses[i].date} location={expenses[i].LocationOfExpenditure}></ExpenseItem>)
   }
+
+  const addExpenseHandler = expense =>{
+    console.log('In App.js')
+    console.log(expense);
+  }
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense={addExpenseHandler}/>
       {newexpense}
     </div>
   );
