@@ -15,7 +15,7 @@ const ExpensesList = (props) => {
           amount={expense.amount}
           date={expense.date}
           
-        />,<p>Only single Expense here. Please add more...</p>
+        />,<p className='expenses-list__fallback'> Only single Expense here. Please add more...</p>
         ]
        ))
   }
